@@ -1,0 +1,56 @@
+@import "../../../styles/mixins/global.scss";
+
+.header-section {
+  background: #191919;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  z-index: 99999;
+  position: sticky;
+  top: 0;
+
+  .header-alignment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+
+    .header-logo-alignment {
+      cursor: pointer;
+      @include text-20;
+      color: #e7e7e7;
+    }
+
+    .header-option-alignment {
+      .btn-logout {
+        button {
+          height: 35px;
+          border: 2px solid #e7e7e7;
+          background: transparent;
+          color: #e7e7e7;
+          cursor: pointer;
+          border-radius: 5px;
+          padding: 0 10px;
+        }
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .user-icon-alignment {
+          width: 40px;
+          height: 40px;
+          background: #3f9fff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
